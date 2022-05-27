@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area-I</title>
+    <style>
+        .cotainer{
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(3,150px);
+            gap: 20px;
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e" ;
+
+        }
+         .cotainer>div{
+             background-color: rgb(78, 71, 71);
+             color: white;
+             padding-left: 30px;
+             display: grid;
+             align-items: center;
+             border-radius: 10px;
+             font-size: 50px;
+         }
+         .cotainer>div:nth-child(1){
+             grid-area: a;
+           
+         }
+         .cotainer>div:nth-child(2){
+             grid-area: b;
+         }
+         .cotainer>div:nth-child(3){
+             grid-area: c;
+         }
+         .cotainer>div:nth-child(4){
+             grid-area: d;
+         }
+         .cotainer>div:nth-child(5){
+             grid-area: e;
+         }
+    </style>
+</head>
+<body>
+    <div class="cotainer">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </div>
+</body>
+</html>

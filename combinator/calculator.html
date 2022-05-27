@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            width: 350px;
+            height: 500px;
+            /* border: 1px solid red; */
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .container table {
+            margin: auto;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            border: none;
+            margin: 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        div>input {
+            border: none;
+            width: 260px;
+            height: 60px;
+            font-size: 20px;
+            margin-left: 43px;
+            margin-top: 60px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        td>button:last-child {
+            background-color: black;
+            color: white;
+        }
+
+        div h1 {
+            text-align: center;
+            color: teal;
+            margin-bottom: 50px;
+            font-size: 50px;
+        }
+
+        table>thead>tr:last-child>td>button:nth-child(3) {
+            background-color: black;
+            color: white;
+        }
+
+        table>thead>tr:last-child>td>button:nth-child(1) {
+            background-color: red;
+            color: white;
+        }
+        /* thead>tr:nth-child(3)>td>button:nth-child(2){
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Masai Calculator</h1>
+    </div>
+    <div class="container">
+        <div>
+            <input type="number">
+        </div>
+        <table cellspacing="7">
+            <thead>
+                <tr>
+                    <td>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>X</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>C</button>
+                        <button>0</button>
+                        <button>=</button>
+                        <button>/</button>
+                    </td>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+</body>
+
+</html>
